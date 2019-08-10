@@ -1,76 +1,309 @@
-baseurl = "https://www.jete.me"
-title = "Jeffry Tandiono"
-theme = "coder-portfolio"
-languagecode = "en"
-defaultcontentlanguage = "en"
+baseurl                 = "https://example.com/"
+DefaultContentLanguage  = "en"
+title                   = "Hugo Future Imperfect Slim"
+theme                   = "hugo-future-imperfect-slim"
+preserveTaxonomyNames   = true
+paginate                = 3
+disqusShortname         = ""
+googleAnalytics         = ""
+pluralizeListTitles     = false
+disableLanguages        = [""]
 
-paginate = 10
+[params]
+  # Loads CSS and JavaScript files. The variable is an array so that you can load
+  # multiple/additional files if necessary. The standard theme files can be loaded
+  # by adding the value, "default". Default includes the add-on.css and and-on.js.
+  # Example: ["default", "/path/to/file"]
+  cssFiles              = ["default"]
+  jsFiles               = ["default"]
+  # Sets options for highlight.js
+  highlightjs           = true
+  highlightjsTheme      = "github"
+  highlightjsLang       = ["html", "css", "js", "toml"]
+  # Sets where "View More Posts" links to
+  viewMorePostsLink     = "/blog/"
+  # Activate Estimated Reading Times, which appear in the post headers
+  readingTime           = true
+  # Sets which Social Share links appear in posts.
+  # Options are twitter, facebook, reddit, linkedin, pinterest, email
+  socialShare           = ["twitter", "facebook", "reddit", "linkedin",
+                          "pinterest", "email"]
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
-pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
+  [params.meta]
+    # Sets the meta tag description
+    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
+    # Sets the meta tag author
+    author              = "HTML5UP and Hugo"
+    # If you would like to add more comprehensive favicon support passed root
+    # directory favicon.ico, utlize this funtion. It is recommened to use
+    # https://realfavicongenerator.net to generate your icons as that is the basis
+    # for the theme's naming.
+    favicon             = false
+    svg                 = true
+    faviconVersion      = "1"
+    msColor             = "#ffffff" # Copy from the https://realfavicongenerator.net
+    iOSColor            = "#ffffff" # Copy from the https://realfavicongenerator.net
 
-disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
+  [params.header]
+    # Sets the navbarTitle that appears in the top left of the navigation bar
+    navbarTitle         = "Future Imperfect"
+    # Sets navbarTitle to match the section of the website
+    dynamicTitles       = true
+    searchMenu          = true
+    shareMenu           = true
+    languageMenu        = true
 
-[params] # theme parameters
-    author = "Jeffry Tandiono" # Author's name.
-    info = "SOFTWARE ENGINEER" # Author's job title or info.
-    description = "Jeffry Tandiono's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
-    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+  # These are optional params related to the sidebar. They are recommended, but not
+  # required for proper functionality. HTML is supported within the params.
+  [params.intro]
+    header                = "Hugo Future Imperfect Slim"
+    paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
+    rssIntro              = true
+    socialIntro           = true
 
-    footercontent = "Enter a text here." # Add footer content
-    fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
-    fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
+    # This appears at the top of the sidebar above params.intro.header.
+    # A width of less than 100px is recommended from a design perspective.
+    [params.intro.pic]
+      src                 = "/img/main/logo.jpg"
+      # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
+      shape               = "circle"
+      width               = ""
+      alt                 = "Hugo Future Imperfect Slim"
 
-    # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
-    hideCopyright = false
+  [params.sidebar]
+    about               = "test"
+    # Sets the number of recent posts to show in the sidebar. The default value is 5.
+    postAmount          = 5
+    # set to show or to hide categories in the sidebar
+    categories          = true
+    # Sets Categories to sort by number of posts instead of alphabetical
+    categoriesByCount   = true
 
-    # Custom CSS
-    custom_css = []
+  [params.footer]
+    # Sets RSS icons to appear on the sidebar with the social media buttons
+    rssFooter           = true
+    # Sets Social Media icons to appear on the sidebar
+    socialFooter        = true
 
-    # Alignment of Mobile Menu items
-    itemscentered = true
+  # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
+  # due to its ease of use. Feel free to check out both and decide which you would
+  # prefer to use. See Staticman.yml for additional settings.
+  [params.staticman]
+    # Sets Statiman to be active
+    # If using GitHub, go to https://github.com/apps/staticman-net
+    # If using GitLab, just add the GitLab bot, NO need to hit `/connect/v3/...`
+    staticman           = false
+    # Sets the location for Staticman to connect to
+    api                 = "dev.staticman.net"  # without trailing slash
+    gitProvider         = "github"  # either "github" or "gitlab"
+    username            = ""
+    repo                = ""
+    branch              = ""
 
-    # RTL support
-    rtl = false
+    [params.staticman.recaptcha]
+      recaptcha         = false
+      siteKey           = "" # Site Key
+      encryptedKey      = ""
 
-    # Bottom sns share
-    snsShare = true # new add
-    # Popular sns share
-    # if you want add sns. please message!
-    enableTwitterShare = true  # new add
-    enableFacebookShare = true # new add
-    enableHatenaShare = true   # new add
-    enableLineShare = true     # new add
+[menu]
+  # Sets the menu items in the navigation bar
+  # Identifier prepends a Font Awesome icon to the menu item
+  [[menu.main]]
+    name              = "Home"
+    url               = "/"
+    identifier        = "fas fa-home"
+    weight            = 1
 
-    thumbnail = "images/tn.png" # default sns thumbnail
+  [[menu.main]]
+    name              = "About"
+    url               = "/about/"
+    identifier        = "far fa-id-card"
+    weight            = 2
 
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+  [[menu.main]]
+    name              = "Blog"
+    url               = "/blog/"
+    identifier        = "far fa-newspaper"
+    weight            = 3
 
-# Social links
-[[params.social]]
-    name = "Github"
-    weight = 1
-    url = "https://github.com/naro143/"
-[[params.social]]
-    name = "Twitter"
-    weight = 2
-    url = "https://twitter.com/naro143/"
-[[params.social]]
-    name = "LinkedIn"
-    weight = 3
-    url = "https://www.linkedin.com/in/naro143/"
+  [[menu.main]]
+    name              = "Categories"
+    url               = "/categories/"
+    identifier        = "fas fa-sitemap"
+    weight            = 5
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "posts"
-[[menu.main]]
-    name = "About"
-    weight = 2
-    url = "about"
+  [[menu.main]]
+    name              = "Contact"
+    url               = "/contact/"
+    identifier        = "far fa-envelope"
+    weight            = 6
+
+[Languages]
+  # Each language has its own menu.
+  [Languages.en]
+    languageCode        = "en"
+    LanguageName        = "English"
+    weight              = 1
+
+  [Languages.fr]
+    languageCode        = "fr"
+    LanguageName        = "Français"
+    title               = "Hugo Future Imperfect Slim in fr"
+    description         = "Un thème de HTML5 UP, porté par Julio Pescador. Slimmed et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo. "
+    weight              = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Accueil"
+      url               = "/"
+      identifier        = "fas fa-home"
+      weight            = 1
+
+    [[Languages.fr.menu.main]]
+      name              = "About"
+      url               = "/about/"
+      identifier        = "far fa-id-card"
+      weight            = 2
+
+    [[Languages.fr.menu.main]]
+      name              = "Blog"
+      url               = "/blog/"
+      identifier        = "far fa-newspaper"
+      weight            = 3
+
+    [[Languages.fr.menu.main]]
+      name              = "Catégories"
+      url               = "/categories/"
+      identifier        = "fas fa-sitemap"
+      weight            = 5
+
+    [[Languages.fr.menu.main]]
+      name              = "Contact"
+      url               = "/contact/"
+      identifier        = "far fa-envelope"
+      weight            = 6
+
+  [Languages.pl]
+    languageCode        = "pl"
+    LanguageName        = "Polskie"
+    title               = "Hugo przyszłość niedoskonała"
+    description         = "Motyw HTML5 UP, przeniesiony przez Julio Pescadora i wzbogacony przez Patricka Collinsa. Wielojęzyczny przez StatnMap. Zasilany przez Hugo."
+    weight              = 2
+
+    [[Languages.pl.menu.main]]
+      name              = "Home"
+      url               = "/"
+      identifier        = "fas fa-home"
+      weight            = 1
+
+    [[Languages.pl.menu.main]]
+      name              = "O mnie"
+      url               = "/about/"
+      identifier        = "far fa-id-card"
+      weight            = 2
+
+    [[Languages.pl.menu.main]]
+      name              = "Blog"
+      url               = "/blog/"
+      identifier        = "far fa-newspaper"
+      weight            = 3
+
+    [[Languages.pl.menu.main]]
+      name              = "Kategorie"
+      url               = "/categories/"
+      identifier        = "fas fa-sitemap"
+      weight            = 5
+
+    [[Languages.pl.menu.main]]
+      name              = "Kontakt"
+      url               = "/contact/"
+      identifier        = "far fa-envelope"
+      weight            = 6
+
+  [Languages.br]
+    languageCode        = "br"
+    LanguageName        = "Português"
+    title               = "Hugo Future Imperfect Slim em português"
+    description         = "Um tema do HTML5 UP, portado por Julio Pescadora e reduzido por Patrick Collins. Multilíngue por StatnMap. Feito com Hugo."
+    weight              = 4
+
+    [[Languages.br.menu.main]]
+      name              = "Início"
+      url               = "/"
+      identifier        = "fas fa-home"
+      weight            = 1
+
+    [[Languages.br.menu.main]]
+      name              = "Sobre"
+      url               = "/about/"
+      identifier        = "far fa-id-card"
+      weight            = 2
+
+    [[Languages.br.menu.main]]
+      name              = "Blog"
+      url               = "/blog/"
+      identifier        = "far fa-newspaper"
+      weight            = 3
+
+    [[Languages.br.menu.main]]
+      name              = "Categorias"
+      url               = "/categories/"
+      identifier        = "fas fa-sitemap"
+      weight            = 5
+
+    [[Languages.br.menu.main]]
+      name              = "Contato"
+      url               = "/contact/"
+      identifier        = "far fa-envelope"
+      weight            = 6
+
+# Sets Social Media icons to appear and link to your account. Value should be your
+# username unless otherwise noted. These are the icons affected by socialAppearAtTop
+# and socialAppearAtBottom.
+[social]
+  # Coding Communities
+  github                = "pacollins/hugo-future-imperfect-slim"
+  gitlab                = ""
+  stackoverflow         = "" # User Number
+  bitbucket             = ""
+  jsfiddle              = ""
+  codepen               = ""
+  # Visual Art Communities
+  deviantart            = ""
+  flickr                = "example"
+  behance               = ""
+  dribbble              = ""
+  # Publishing Communities
+  wordpress             = ""
+  medium                = ""
+  # Professional/Business Oriented Communities
+  linkedin              = "example"
+  linkedin_company      = "examplebusiness"
+  foursquare            = ""
+  xing                  = ""
+  slideshare            = ""
+  # Social Networks
+  facebook              = "example"
+  googleplus            = ""
+  reddit                = "example"
+  quora                 = ""
+  youtube               = ""
+  vimeo                 = ""
+  whatsapp              = "" # WhatsApp Number
+    # WeChat and QQ need testing.
+    wechat              = ""
+    qq                  = "" # User ID Number
+  instagram             = "example"
+  tumblr                = ""
+  twitter               = "example"
+  skype                 = ""
+  snapchat              = ""
+  pinterest             = "example"
+  telegram              = "example"
+  vine                  = ""
+  googlescholar         = ""
+  orcid                 = ""
+  researchgate          = "example"
+  keybase               = "example"
+  mastodon              = "example.com/@example"
+  # Email
+  email                 = "example"

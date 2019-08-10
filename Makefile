@@ -1,12 +1,12 @@
 
 # LESS params
-LESS_DIR = ./static/less
+LESS_DIR = ./themes/hugo-future-imperfect-slim/static/less
 LESS_FILE = style.less
 LESS_RTL_FILE = style-rtl.less
 LESS_NORMALIZE_FILE = normalize.less
 
 # CSS params
-CSS_DIR = ./static/css
+CSS_DIR = ./themes/hugo-future-imperfect-slim/static/css
 CSS_FILE = style.min.css
 CSS_RTL_FILE = style-rtl.min.css
 CSS_TMP_FILE = tmp.css
@@ -30,13 +30,3 @@ build-rtl:
 
 build-normalize:
 	$(call build_less,$(LESS_NORMALIZE_FILE),$(CSS_NORMALIZE_FILE))
-
-demo: build
-	mkdir -p demo/themes/coder-portfolio
-	rsync -av exampleSite/* demo
-	rsync -av --exclude='demo' --exclude='exampleSite' --exclude='.git' . demo/themes/coder-portfolio
-	cd demo && hugo serve -D
-
-clean:
-	rm -f $(CSS_DIR)/*.css
-	rm -rf demo
