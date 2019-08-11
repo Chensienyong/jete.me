@@ -1,6 +1,6 @@
-baseurl                 = "https://example.com/"
+baseurl                 = "https://jete.me/"
 DefaultContentLanguage  = "en"
-title                   = "Hugo Future Imperfect Slim"
+title                   = "Jeffry Tandiono"
 theme                   = "hugo-future-imperfect-slim"
 preserveTaxonomyNames   = true
 paginate                = 3
@@ -26,14 +26,13 @@ disableLanguages        = [""]
   readingTime           = true
   # Sets which Social Share links appear in posts.
   # Options are twitter, facebook, reddit, linkedin, pinterest, email
-  socialShare           = ["twitter", "facebook", "reddit", "linkedin",
-                          "pinterest", "email"]
+  socialShare           = ["twitter", "reddit", "facebook", "linkedin", "pinterest", "email"]
 
   [params.meta]
     # Sets the meta tag description
-    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
+    description         = "Jeffry Tandiono."
     # Sets the meta tag author
-    author              = "HTML5UP and Hugo"
+    author              = "Jeffry Tandiono"
     # If you would like to add more comprehensive favicon support passed root
     # directory favicon.ico, utlize this funtion. It is recommened to use
     # https://realfavicongenerator.net to generate your icons as that is the basis
@@ -46,7 +45,7 @@ disableLanguages        = [""]
 
   [params.header]
     # Sets the navbarTitle that appears in the top left of the navigation bar
-    navbarTitle         = "Future Imperfect"
+    navbarTitle         = "Jeffry Tandiono"
     # Sets navbarTitle to match the section of the website
     dynamicTitles       = true
     searchMenu          = true
@@ -56,19 +55,19 @@ disableLanguages        = [""]
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
-    header                = "Hugo Future Imperfect Slim"
-    paragraph             = "Another fine, responsive site template by <a href='http://html5up.net'>HTML5 UP</a>."
-    rssIntro              = true
+    header                = "Jeffry Tandiono"
+    paragraph             = "Perfect imperfection boy"
+    rssIntro              = false
     socialIntro           = true
 
     # This appears at the top of the sidebar above params.intro.header.
     # A width of less than 100px is recommended from a design perspective.
     [params.intro.pic]
-      src                 = "/img/main/logo.jpg"
+      src                 = "/images/avatar.jpg"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
-      width               = ""
-      alt                 = "Hugo Future Imperfect Slim"
+      width               = "100"
+      alt                 = "Jeffry Tandiono"
 
   [params.sidebar]
     about               = "test"
@@ -81,9 +80,9 @@ disableLanguages        = [""]
 
   [params.footer]
     # Sets RSS icons to appear on the sidebar with the social media buttons
-    rssFooter           = true
+    rssFooter           = false
     # Sets Social Media icons to appear on the sidebar
-    socialFooter        = true
+    socialFooter        = false
 
   # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
   # due to its ease of use. Feel free to check out both and decide which you would
@@ -145,113 +144,39 @@ disableLanguages        = [""]
     LanguageName        = "English"
     weight              = 1
 
-  [Languages.fr]
-    languageCode        = "fr"
-    LanguageName        = "Français"
-    title               = "Hugo Future Imperfect Slim in fr"
-    description         = "Un thème de HTML5 UP, porté par Julio Pescador. Slimmed et amélioré par Patrick Collins. Multilingue par StatnMap. Propulsé par Hugo. "
+  [Languages.id]
+    languageCode        = "id"
+    LanguageName        = "Indonesia"
+    title               = "Jeffry Tandiono"
+    description         = "Bocah yang sempurna akan ketidaksempurnaan"
     weight              = 2
 
-    [[Languages.fr.menu.main]]
-      name              = "Accueil"
+    [[Languages.id.menu.main]]
+      name              = "Beranda"
       url               = "/"
       identifier        = "fas fa-home"
       weight            = 1
 
-    [[Languages.fr.menu.main]]
-      name              = "About"
+    [[Languages.id.menu.main]]
+      name              = "Tentang"
       url               = "/about/"
       identifier        = "far fa-id-card"
       weight            = 2
 
-    [[Languages.fr.menu.main]]
+    [[Languages.id.menu.main]]
       name              = "Blog"
       url               = "/blog/"
       identifier        = "far fa-newspaper"
       weight            = 3
 
-    [[Languages.fr.menu.main]]
-      name              = "Catégories"
+    [[Languages.id.menu.main]]
+      name              = "Kategori"
       url               = "/categories/"
       identifier        = "fas fa-sitemap"
       weight            = 5
 
-    [[Languages.fr.menu.main]]
-      name              = "Contact"
-      url               = "/contact/"
-      identifier        = "far fa-envelope"
-      weight            = 6
-
-  [Languages.pl]
-    languageCode        = "pl"
-    LanguageName        = "Polskie"
-    title               = "Hugo przyszłość niedoskonała"
-    description         = "Motyw HTML5 UP, przeniesiony przez Julio Pescadora i wzbogacony przez Patricka Collinsa. Wielojęzyczny przez StatnMap. Zasilany przez Hugo."
-    weight              = 2
-
-    [[Languages.pl.menu.main]]
-      name              = "Home"
-      url               = "/"
-      identifier        = "fas fa-home"
-      weight            = 1
-
-    [[Languages.pl.menu.main]]
-      name              = "O mnie"
-      url               = "/about/"
-      identifier        = "far fa-id-card"
-      weight            = 2
-
-    [[Languages.pl.menu.main]]
-      name              = "Blog"
-      url               = "/blog/"
-      identifier        = "far fa-newspaper"
-      weight            = 3
-
-    [[Languages.pl.menu.main]]
-      name              = "Kategorie"
-      url               = "/categories/"
-      identifier        = "fas fa-sitemap"
-      weight            = 5
-
-    [[Languages.pl.menu.main]]
-      name              = "Kontakt"
-      url               = "/contact/"
-      identifier        = "far fa-envelope"
-      weight            = 6
-
-  [Languages.br]
-    languageCode        = "br"
-    LanguageName        = "Português"
-    title               = "Hugo Future Imperfect Slim em português"
-    description         = "Um tema do HTML5 UP, portado por Julio Pescadora e reduzido por Patrick Collins. Multilíngue por StatnMap. Feito com Hugo."
-    weight              = 4
-
-    [[Languages.br.menu.main]]
-      name              = "Início"
-      url               = "/"
-      identifier        = "fas fa-home"
-      weight            = 1
-
-    [[Languages.br.menu.main]]
-      name              = "Sobre"
-      url               = "/about/"
-      identifier        = "far fa-id-card"
-      weight            = 2
-
-    [[Languages.br.menu.main]]
-      name              = "Blog"
-      url               = "/blog/"
-      identifier        = "far fa-newspaper"
-      weight            = 3
-
-    [[Languages.br.menu.main]]
-      name              = "Categorias"
-      url               = "/categories/"
-      identifier        = "fas fa-sitemap"
-      weight            = 5
-
-    [[Languages.br.menu.main]]
-      name              = "Contato"
+    [[Languages.id.menu.main]]
+      name              = "Kontak"
       url               = "/contact/"
       identifier        = "far fa-envelope"
       weight            = 6
@@ -261,7 +186,7 @@ disableLanguages        = [""]
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github                = "pacollins/hugo-future-imperfect-slim"
+  github                = "chensienyong"
   gitlab                = ""
   stackoverflow         = "" # User Number
   bitbucket             = ""
@@ -269,22 +194,22 @@ disableLanguages        = [""]
   codepen               = ""
   # Visual Art Communities
   deviantart            = ""
-  flickr                = "example"
+  flickr                = ""
   behance               = ""
   dribbble              = ""
   # Publishing Communities
   wordpress             = ""
-  medium                = ""
+  medium                = "chensienyong"
   # Professional/Business Oriented Communities
-  linkedin              = "example"
-  linkedin_company      = "examplebusiness"
+  linkedin              = "jetee"
+  linkedin_company      = ""
   foursquare            = ""
   xing                  = ""
   slideshare            = ""
   # Social Networks
-  facebook              = "example"
+  facebook              = ""
   googleplus            = ""
-  reddit                = "example"
+  reddit                = ""
   quora                 = ""
   youtube               = ""
   vimeo                 = ""
@@ -292,18 +217,18 @@ disableLanguages        = [""]
     # WeChat and QQ need testing.
     wechat              = ""
     qq                  = "" # User ID Number
-  instagram             = "example"
+  instagram             = "chensienyong"
   tumblr                = ""
-  twitter               = "example"
+  twitter               = ""
   skype                 = ""
   snapchat              = ""
-  pinterest             = "example"
-  telegram              = "example"
+  pinterest             = ""
+  telegram              = "jeffrytandiono"
   vine                  = ""
   googlescholar         = ""
   orcid                 = ""
-  researchgate          = "example"
-  keybase               = "example"
-  mastodon              = "example.com/@example"
+  researchgate          = ""
+  keybase               = ""
+  mastodon              = ""
   # Email
-  email                 = "example"
+  email                 = "jeffry.tandiono@gmail.com"
