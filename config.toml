@@ -70,7 +70,7 @@ disableLanguages        = [""]
       alt                 = "Jeffry Tandiono"
 
   [params.sidebar]
-    about               = "test"
+    about               = ""
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 5
     # set to show or to hide categories in the sidebar
