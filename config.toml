@@ -48,16 +48,8 @@ disqusShortname = ""
       url = "#"
 
     [[params.navigation.links]]
-      name = "Blogs"
-      url = "blogs"
-
-    [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
-
-    [[params.navigation.links]]
-      name = "Elements"
-      url = "elements.html"
+      name = "About"
+      url = "about"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
@@ -67,15 +59,14 @@ disqusShortname = ""
     #    url = "UrlOfLink"
 
     # Button Style 1
-    [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
+    # [[params.navigation.button1]]
+    #   name = "Get Started"
+    #   url = "blogs"
 
     # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
-
+    # [[params.navigation.button2]]
+    #   name = "Log In"
+    #   url = "#"
 
   # Banner section
   [params.banner]
@@ -84,7 +75,6 @@ disqusShortname = ""
     title = "Heyoo, my name is Jeffry Tandiono"
     subtitle = "A guy."
     buttonText = "Get Started"
-
 
   # Tiles Section
   [params.tiles]
