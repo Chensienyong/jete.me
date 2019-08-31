@@ -1,3 +1,6 @@
 [submodule "themes/forty"]
 	path = themes/forty
 	url = git@github.com:MarcusVirg/forty.git
+[submodule "themes/dream-plus"]
+	path = themes/dream-plus
+	url = https://github.com/UtkarshVerma/hugo-dream-plus
