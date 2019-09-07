@@ -1,8 +1,7 @@
-baseURL = "https://dream-plus-posts.netlify.com"
-title = "UtkarshVerma's Blog"
+baseURL = "https://jeffrytandiono.com"
+title = "Jeffry Tandiono"
 theme = "dream-plus"
-themesDir = "../.."		#Don't use this, only for exampleSite
-paginate = 4
+paginate = 6
 enableRobotsTXT = true
 disqusShortname = "dream-plus"
 
@@ -19,17 +18,17 @@ enableEmoji=true
 
 [params]
 	#Favicon for site
-	favicon = "/img/defaultFav.ico"
+	favicon = "/favicon/favicon.ico"
 
 	#Set whether you're hosting "cards" or "post"
 	contentType = "posts"
 
-	siteStartYear = 2018
+	siteStartYear = 2019
 
 	[params.author]
-		name = "Utkarsh Verma"
-		description = "Just a random blog for random stuff, mostly tech-related."
-		avatar = "https://raw.githubusercontent.com/UtkarshVerma/utkarshverma.github.io/source/static/images/avatar.jpg"
+		name = "Jeffry Tandiono"
+		description = "Just a boy posting random stuff, mostly tech-related."
+		avatar = "/images/avatar.jpg"
 		motto = "A keen maker, programmer and an Instructables author."
 
 	[params.features]
@@ -51,8 +50,8 @@ enableEmoji=true
 		enabled = true
 
 [social]
-	email = "utkarshverma@pm.me"
-	github = "UtkarshVerma"
-	stackoverflow = "9271608/utkarsh-verma"
-	medium = "UtkarshVerma_"
-	twitter = "UtkarshVerma_"
+	email = "jeffry.tandiono@gmail.com"
+	github = "Chensienyong"
+	stackoverflow = "chensienyong"
+	medium = "chensienyong"
+	twitter = "chensienyong"
