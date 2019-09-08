@@ -29,7 +29,7 @@ enableEmoji=true
 		name = "Jeffry Tandiono"
 		description = "Just a boy posting random stuff, mostly tech-related."
 		avatar = "/images/avatar.jpg"
-		motto = "A keen maker, programmer and an Instructables author."
+		motto = "A keen maker, programmer and an instructables author."
 
 	[params.features]
 		#Enable Twitter Emoji
