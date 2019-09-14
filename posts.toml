@@ -1,7 +1,7 @@
 baseURL = "https://jeffrytandiono.com"
 title = "Jeffry Tandiono"
 theme = "dream-plus"
-paginate = 6
+paginate = 4
 enableRobotsTXT = true
 disqusShortname = "dream-plus"
 
