@@ -3,7 +3,7 @@ title = "Jeffry Tandiono"
 theme = "dream-plus"
 paginate = 4
 enableRobotsTXT = true
-disqusShortname = "dream-plus"
+disqusShortname = ""
 
 #Skip building these files
 ignoreFiles = ["content/404.md", "content/about.md", "content/cards/\\.*"]
@@ -29,7 +29,7 @@ enableEmoji=true
 		name = "Jeffry Tandiono"
 		description = "Just a boy posting random stuff, mostly tech-related."
 		avatar = "/images/avatar.jpg"
-		motto = "A keen maker, programmer and an instructables author."
+		motto = "A highly curious boy who have the desire to change the world."
 
 	[params.features]
 		#Enable Twitter Emoji
@@ -39,7 +39,7 @@ enableEmoji=true
 		#Enable share card
 		shareCard = true
 		#Use custom CSS
-		customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
+		# customCSS = ["https://cdn.rawgit.com/UtkarshVerma/hugo-dream-plus/ae11561d/exampleSite/static/css/highlight.css"]
 
 	#Tags settings
 	[params.tags]
@@ -54,4 +54,3 @@ enableEmoji=true
 	github = "Chensienyong"
 	stackoverflow = "chensienyong"
 	medium = "chensienyong"
-	twitter = "chensienyong"
